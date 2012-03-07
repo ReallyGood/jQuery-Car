@@ -56,7 +56,7 @@
 				}
 				if(looping) {
 					duration *= total / 2;
-					easing = "easeInBack";
+					easing = s.loopEasing;
 				}
 				newItemLeft = itemWidth - (current * itemWidth);
 
@@ -78,7 +78,8 @@
 
 	$.fn.car.defaults = {
 		duration: 400,
-		easing: 'swing'
+		easing: 'swing',
+		loopEasing: 'easeOutBack'
 	};
 
 	$.fn.car.settings = {};
