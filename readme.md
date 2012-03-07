@@ -12,10 +12,12 @@ Your container must have an id (i.e. `car1`), and inside it hold a `<ul>` with `
 The markup for controls is pretty strict, and should look like this:
 
 
-`<div class="car-controls" data-for="car1">
+```html
+<div class="car-controls" data-for="car1">
     <a href="#" class="prev">Previous</a>
     <a href="#" class="next">Next</a>
-</div>`
+</div>
+```
 
 ## JavaScript
 Include jQuery, the car plugin and then initalize it on the container like so:
@@ -30,11 +32,13 @@ Name of the regular easing function you'd like to use.
 Name of the easing function to use when looping to the other end of the carousel.
 
 ## Example:
-`$('#car2').car({
+```javascript
+$('#car2').car({
     duration: 1000,
     easing: 'easeOutQuad',
     loopEasing: 'easeInElastic'
-});`
+});
+```
 
 Enjoy, [contribute ](https://github.com/ReallyGood/jQuery-Car/issues) and spread the word!
   — [Really Good](http://reallygoodteam.com)
