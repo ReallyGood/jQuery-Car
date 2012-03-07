@@ -1,3 +1,4 @@
+
 # jQuery Car - A Lightweight Carousel Plugin
 __jQuery Car__ is meant to do one thing, and one thing only - Infinitely circulate thru slides, with a 'fast backward/forward' effect after passing an end.
 
@@ -34,3 +35,6 @@ Name of the easing function to use when looping to the other end of the carousel
     easing: 'easeOutQuad',
     loopEasing: 'easeInElastic'
 });`
+
+Enjoy, [contribute ](https://github.com/ReallyGood/jQuery-Car/issues) and spread the word!
+  — [Really Good](http://reallygoodteam.com)
