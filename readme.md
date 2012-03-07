@@ -5,8 +5,10 @@ __jQuery Car__ is meant to do one thing, and one thing only - Infinitely circula
 Apart from jQuery and some bundled CSS, the plugin doesn't require a thing.
 For custom easing functions, The [jQuery Easing Plugin](http://gsgd.co.uk/sandbox/jquery/easing/) is recommended.
 
+## Demo
+Check out the [__DEMO__](http://reallygood.co.il/plugins/car/) page (or look at `index.html`).
+
 ## Usage
-Some basic examples can be found at `index.html`
 ### Markup
 Your container must have an id (i.e. `car1`), and inside it hold a `<ul>` with `li` for each slide.
 The markup for controls is pretty strict, and should look like this:
