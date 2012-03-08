@@ -24,11 +24,11 @@
 						current = 1;
 						total = items.length;
 						band.css('width', itemWidth * total);
-						controls.delegate('a', 'click', helpers.moveSlide);
+						controls.delegate('a, button', 'click', helpers.moveSlide);
 					});
 				},
 				destroy: function() {
-					controls.undelegate('a', 'click', helpers.moveSlide);
+					controls.undelegate('a, button', 'click', helpers.moveSlide);
 				}
 		};
 		var helpers = {
@@ -79,7 +79,7 @@
 	$.fn.car.defaults = {
 		duration: 400,
 		easing: 'swing',
-		loopEasing: 'easeOutBack'
+		loopEasing: 'easeInBack'
 	};
 
 	$.fn.car.settings = {};
