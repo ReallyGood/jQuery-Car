@@ -7,6 +7,13 @@
  */
 
 (function($) {
+	// Custom mod of a borrowed jQuery Easing function. Play with 
+	$.extend($.easing, {
+		slightEaseInBack:function(e,a,c,b,d,f){
+			void 0==f&&(f=1.25);return b*(a/=d)*a*((f+1)*a-f)+c
+		}
+	});
+
 	$.fn.car = function(method) {
 		var s, band, items, itemWidth, current, total, controls;
 		var methods = {
@@ -79,7 +86,7 @@
 	$.fn.car.defaults = {
 		duration: 400,
 		easing: 'swing',
-		loopEasing: 'easeInBack'
+		loopEasing: 'slightEaseInBack'
 	};
 
 	$.fn.car.settings = {};
